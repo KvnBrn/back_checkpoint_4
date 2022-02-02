@@ -32,9 +32,10 @@ const deleteById = (id) => {
 
 // CREATE
 const createNew = (video_game) => {
-    const { title } = video_game;
+    const { name, image, description, id_rate } = video_game;
     return new Promise((resolve, reject) => {
-        dbConnect.query('INSERT INTO video_game (`id`, `name`, `image`, `description`, `id_rate`) VALUES (?)', title, (err, result) => {
+        dbConnect.query('INSERT INTO video_game (name, image, description, id_rate) VALUES (?, ?, ?, ?)', 
+        [name, image, description, id_rate], (err, result) => {
             if (err) reject(err);
             else resolve(result.insertId);
         })
@@ -42,10 +43,9 @@ const createNew = (video_game) => {
 }
 
 // UPDATE
-const updateVideoGame = (video_game) => {
-    const { title, id } = video_game;
+const updateVideoGame = (id, video_game) => {
     return new Promise((resolve, reject) => {
-        dbConnect.query('UPDATE video_game SET title = ? WHERE id = ?', [title, id], (err, result) => {
+        dbConnect.query('UPDATE video_game SET ? WHERE id = ?', [video_game, id], (err, result) => {
             if (err) reject(err);
             else resolve(result);
         })
