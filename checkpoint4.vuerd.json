@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -1.6666666004392863,
-    "scrollLeft": -5.8333331015375025,
-    "zoomLevel": 1,
+    "scrollTop": -185.8333259489801,
+    "scrollLeft": -285.8333219753366,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": false,
       "columnComment": false,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-sql-ddl",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -143,7 +143,7 @@
           "active": false,
           "left": 22.501,
           "top": 25.0005,
-          "zIndex": 79,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60
         },
@@ -247,7 +247,7 @@
             "id": "5a46c52b-1b89-4c8e-a30c-631655776d62"
           },
           {
-            "name": "id_rate",
+            "name": "rate",
             "comment": "",
             "dataType": "INT",
             "default": "",
@@ -260,7 +260,7 @@
             "ui": {
               "active": false,
               "pk": false,
-              "fk": true,
+              "fk": false,
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
@@ -274,74 +274,12 @@
           "active": false,
           "left": 173.3333,
           "top": 200.8337,
-          "zIndex": 253,
+          "zIndex": 11,
           "widthName": 75.69705200195312,
           "widthComment": 60
         },
         "visible": true,
         "id": "12a6fd48-273c-45ff-afb4-e97d9881b77a"
-      },
-      {
-        "name": "rate",
-        "comment": "",
-        "columns": [
-          {
-            "name": "id",
-            "comment": "",
-            "dataType": "INT",
-            "default": "",
-            "option": {
-              "autoIncrement": true,
-              "primaryKey": true,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": true,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "66e2b38c-d110-4eee-9715-95e19995168f"
-          },
-          {
-            "name": "number",
-            "comment": "",
-            "dataType": "INT",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "333531f8-44ff-4b59-ae83-1a69e0c8c99d"
-          }
-        ],
-        "ui": {
-          "active": false,
-          "left": 642.4998,
-          "top": 231.6673,
-          "zIndex": 229,
-          "widthName": 60,
-          "widthComment": 60
-        },
-        "visible": true,
-        "id": "941e8458-3a04-4c13-a4bb-59e648e716c9"
       },
       {
         "name": "category",
@@ -398,7 +336,7 @@
           "active": false,
           "left": 642.4996,
           "top": 498.333,
-          "zIndex": 243,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 60
         },
@@ -480,10 +418,10 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 178.3326,
           "top": 488.3329,
-          "zIndex": 256,
+          "zIndex": 5,
           "widthName": 134.88609313964844,
           "widthComment": 60
         },
@@ -549,32 +487,6 @@
         "constraintName": "fk_video_game_to_video_game_categorie",
         "visible": true,
         "id": "f1e616dc-7aaf-4bde-b35f-b690b179acf9"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Dash",
-        "start": {
-          "tableId": "941e8458-3a04-4c13-a4bb-59e648e716c9",
-          "columnIds": [
-            "66e2b38c-d110-4eee-9715-95e19995168f"
-          ],
-          "x": 642.4998,
-          "y": 286.6673,
-          "direction": "left"
-        },
-        "end": {
-          "tableId": "12a6fd48-273c-45ff-afb4-e97d9881b77a",
-          "columnIds": [
-            "ae1f1132-dee7-4cf1-a745-ad801217b987"
-          ],
-          "x": 515.8144553955078,
-          "y": 286.5837,
-          "direction": "right"
-        },
-        "constraintName": "fk_rate_to_video_game",
-        "visible": true,
-        "id": "2899246d-4306-4cce-ad89-7f9cb795ec89"
       }
     ]
   }
