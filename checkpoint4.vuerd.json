@@ -1,0 +1,581 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -1.6666666004392863,
+    "scrollLeft": -5.8333331015375025,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "user",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "594aa906-f98b-48f8-9b40-f69fb0ab25f2"
+          },
+          {
+            "name": "email",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 90.02308654785156,
+              "widthDefault": 60
+            },
+            "id": "2175fc59-afa1-420e-ac21-defa515ba5ae"
+          },
+          {
+            "name": "password",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.92903137207031,
+              "widthComment": 60,
+              "widthDataType": 90.02308654785156,
+              "widthDefault": 60
+            },
+            "id": "b9804233-fca0-4d81-93bf-303116829f52"
+          },
+          {
+            "name": "is_admin",
+            "comment": "",
+            "dataType": "BOOLEAN",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 62.98307800292969,
+              "widthDefault": 60
+            },
+            "id": "550dae48-0899-4da4-8ea1-4c97ecd3a771"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 22.501,
+          "top": 25.0005,
+          "zIndex": 79,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "6428533a-9fee-4756-9112-5c7c41456991"
+      },
+      {
+        "name": "video_game",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f984cd29-2268-4b91-843d-fa0ab03868a5"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 90.02308654785156,
+              "widthDefault": 60
+            },
+            "id": "505a986f-4d8d-4a4f-85a4-705824b6ae96"
+          },
+          {
+            "name": "image",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 90.02308654785156,
+              "widthDefault": 60
+            },
+            "id": "878d9a52-c657-4270-b42e-0044149384c0"
+          },
+          {
+            "name": "description",
+            "comment": "",
+            "dataType": "LONGTEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.45806884765625,
+              "widthComment": 60,
+              "widthDataType": 67.35107421875,
+              "widthDefault": 60
+            },
+            "id": "5a46c52b-1b89-4c8e-a30c-631655776d62"
+          },
+          {
+            "name": "id_rate",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ae1f1132-dee7-4cf1-a745-ad801217b987"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 173.3333,
+          "top": 200.8337,
+          "zIndex": 253,
+          "widthName": 75.69705200195312,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "12a6fd48-273c-45ff-afb4-e97d9881b77a"
+      },
+      {
+        "name": "rate",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "66e2b38c-d110-4eee-9715-95e19995168f"
+          },
+          {
+            "name": "number",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "333531f8-44ff-4b59-ae83-1a69e0c8c99d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 642.4998,
+          "top": 231.6673,
+          "zIndex": 229,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "941e8458-3a04-4c13-a4bb-59e648e716c9"
+      },
+      {
+        "name": "category",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "887e96c5-d929-401d-bd7d-bdc40f9c07b3"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 90.02308654785156,
+              "widthDefault": 60
+            },
+            "id": "bb60aa07-7e4d-4ca6-8ff8-3fd5bdae7481"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 642.4996,
+          "top": 498.333,
+          "zIndex": 243,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "a315fff4-92aa-4f25-a8af-a89d5f16f51e"
+      },
+      {
+        "name": "video_game_category",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f9d54b30-8b0f-498b-bd1d-1ebace3d69fc"
+          },
+          {
+            "name": "id_category",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 72.53805541992188,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "276ce090-1d17-4201-b222-ea2af551bedc"
+          },
+          {
+            "name": "id_video_game",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 92.81806945800781,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "74ba2ee5-c369-4294-b758-ddbeb376c51f"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 178.3326,
+          "top": 488.3329,
+          "zIndex": 256,
+          "widthName": 134.88609313964844,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "ee6159f3-2ad8-4a6b-979e-ef5f5b2b1202"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a315fff4-92aa-4f25-a8af-a89d5f16f51e",
+          "columnIds": [
+            "887e96c5-d929-401d-bd7d-bdc40f9c07b3"
+          ],
+          "x": 642.4996,
+          "y": 553.3330000000001,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "ee6159f3-2ad8-4a6b-979e-ef5f5b2b1202",
+          "columnIds": [
+            "276ce090-1d17-4201-b222-ea2af551bedc"
+          ],
+          "x": 513.1506694580078,
+          "y": 553.5829,
+          "direction": "right"
+        },
+        "constraintName": "fk_categorie_to_video_game_categorie",
+        "visible": true,
+        "id": "dacf5306-e57c-43bc-8881-076404c6f50b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "12a6fd48-273c-45ff-afb4-e97d9881b77a",
+          "columnIds": [
+            "f984cd29-2268-4b91-843d-fa0ab03868a5"
+          ],
+          "x": 344.5738776977539,
+          "y": 372.3337,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "ee6159f3-2ad8-4a6b-979e-ef5f5b2b1202",
+          "columnIds": [
+            "74ba2ee5-c369-4294-b758-ddbeb376c51f"
+          ],
+          "x": 345.7416347290039,
+          "y": 488.3329,
+          "direction": "top"
+        },
+        "constraintName": "fk_video_game_to_video_game_categorie",
+        "visible": true,
+        "id": "f1e616dc-7aaf-4bde-b35f-b690b179acf9"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "941e8458-3a04-4c13-a4bb-59e648e716c9",
+          "columnIds": [
+            "66e2b38c-d110-4eee-9715-95e19995168f"
+          ],
+          "x": 642.4998,
+          "y": 286.6673,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "12a6fd48-273c-45ff-afb4-e97d9881b77a",
+          "columnIds": [
+            "ae1f1132-dee7-4cf1-a745-ad801217b987"
+          ],
+          "x": 515.8144553955078,
+          "y": 286.5837,
+          "direction": "right"
+        },
+        "constraintName": "fk_rate_to_video_game",
+        "visible": true,
+        "id": "2899246d-4306-4cce-ad89-7f9cb795ec89"
+      }
+    ]
+  }
+}
