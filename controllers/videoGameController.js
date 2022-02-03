@@ -51,7 +51,7 @@ router.post("/", async (req, res) => {
       name,
       image,
       description,
-      id_rate,
+      rate,
     });
     const lastInsertId = await VideoGame.createNew(value);
     if (lastInsertId) {
@@ -70,7 +70,7 @@ router.put("/:id", async (req, res) => {
       name,
       image,
       description,
-      id_rate,
+      rate,
     });
     const videoGameUpdate = await VideoGame.updateVideoGame(req.params.id, value);
       if (videoGameUpdate) res.json(value);
