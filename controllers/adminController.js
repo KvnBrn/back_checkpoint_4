@@ -6,7 +6,7 @@ const router = express.Router();
 const verifyUserAdmin = (req, res, next) => {
     const token = req.headers["x-access-token"];
     if (!token) return res.json({ error: "No token provided" }).status(401);
-    jwt.verify(token, process.env.SERVER_SECRET, (err, decoded) => {
+    jwt.verify(token, process.env.SECRET_KEY, (err, decoded) => {
         if (err) return res.json({ error : "Invalid Token"}).status(401);
         if (decoded.role !== 1) return res.json({ error: 'You are not admin' }).status(401);
         next();

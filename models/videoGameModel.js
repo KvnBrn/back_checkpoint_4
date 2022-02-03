@@ -3,14 +3,13 @@ import dbConnect from '../config/db-config.js';
 // READ ALL
 const getAll = () => {
     return new Promise((resolve, reject) => {
-        dbConnect.query('SELECT * FROM video_game AS vg',
+        dbConnect.query('SELECT vg.id, vg.name, vg.image, vg.description, vg.rate, cat.name FROM video_game AS vg INNER JOIN video_game_category AS vgc ON vg.id = vgc.id_video_game INNER JOIN category AS cat ON cat.id = vgc.id_category',
         (err, results) => {
             if (err) reject(err);
             else resolve(results);
         })
     })
 }
-// SELECT vg.id, vg.name, vg.image, vg.description, vg.id_rate,FROM video_game AS vg LEFT JOIN category AS cat ON cat.id = vgc.id_cat LEFT JOIN video_game_category AS vgc ON vg.id = vgc.id_video_game'
 
 // READ ONE
 const getOneById = (id) => {

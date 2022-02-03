@@ -43,7 +43,7 @@ router.post('/login', async (req, res) => {
         if (userExist) {
             const passwordIsValid = bcrypt.compareSync(userIsValid.value.password, userExist.password);
             if (passwordIsValid) {
-                const token = jwt.sign({ id: userExist.id, role: userExist.is_admin }, process.env.SERVER_SECRET, { expiresIn: 360000 * 2 });
+                const token = jwt.sign({ id: userExist.id, role: userExist.is_admin }, process.env.SECRET_KEY, { expiresIn: 360000 * 2 });
                 res.send({ token: token, user: { email: userExist.email, role: userExist.is_admin } }).status(200);
             }
             else res.json({ error: 'Invalid password' }).status(401);
@@ -57,7 +57,7 @@ router.post('/login', async (req, res) => {
 const verifyJWT = (req, res, next) => {
     const token = req.headers["x-access-token"];
     if (!token) return res.json({ error: "No token provided" }).status(401);
-    jwt.verify(token, process.env.SERVER_SECRET, (err, decoded) => {
+    jwt.verify(token, process.env.SECRET_KEY, (err, decoded) => {
         if (err) return res.json({ error : "Invalid Token"}).status(401);
         next();
     })

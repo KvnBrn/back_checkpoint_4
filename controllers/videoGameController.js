@@ -8,7 +8,7 @@ const schemaVideoGame = Joi.object({
     name: Joi.string().max(255).required(),
     image: Joi.string().max(255).required(),
     description: Joi.string().required(),
-    id_rate: Joi.number().integer().required(),
+    rate: Joi.number().integer().required(),
   });
 
 router.get("/", async (req, res) => {
@@ -45,7 +45,7 @@ router.delete("/:id", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const { name, image, description, id_rate } = req.body;
+  const { name, image, description, rate } = req.body;
   try {
     const { error, value } = await schemaVideoGame.validate({
       name,
@@ -64,7 +64,7 @@ router.post("/", async (req, res) => {
 });
 
 router.put("/:id", async (req, res) => {
-  const { name, image, description, id_rate } = req.body;
+  const { name, image, description, rate } = req.body;
   try {
     const { error, value } = await schemaVideoGame.validate({
       name,
