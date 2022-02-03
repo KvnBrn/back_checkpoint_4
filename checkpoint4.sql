@@ -76,4 +76,5 @@ INSERT INTO `video_game_category` (`id`, `id_category`, `id_video_game`) VALUES
 (5, 9, 5),
 (6, 1, 6),
 (7, 1, 7),
-(8, 11, 8);
+(8, 11, 8),
+(9, 1, 5);
